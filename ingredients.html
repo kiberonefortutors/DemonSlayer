@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>&#128148Твои Хачапури&#128148</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Press+Start+2P&family=Rubik+Beastly&family=Rubik+Moonrocks&family=Rubik+Wet+Paint&display=swap"
+        rel="stylesheet">
+
+    <!-- 
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Rubik Beastly', cursive;
+    font-family: 'Rubik Moonrocks', cursive;
+    font-family: 'Rubik Wet Paint', cursive; 
+    -->
+
+
+
+    <style>
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        body {
+            /* font-family: 'Press Start 2P', cursive; */
+        }
+
+        #name {
+            font-family: 'Rubik Wet Paint', cursive;
+            font-size: 64px;
+        }
+
+
+        span {
+            font-family: 'Rubik Moonrocks', cursive;
+        }
+
+        .btn {
+            font-family: 'Rubik Wet Paint', cursive;
+            /* font-family: 'Press Start 2P', cursive; */
+            font-size: medium;
+            /* 'Rubik Beastly', cursive; */
+        }
+
+        /* #video {
+            position: fixed;
+            object-fit: cover;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            height: 100vh;
+            width: 100vw;
+            opacity: 0.1;
+            z-index: -1;
+            overflow: hidden;
+        } */
+    </style>
+
+</head>
+
+<body class="bg-dark text-center bg-opacity-75">
+    <!-- <video autoplay muted loop id="video">
+        <source src="hachapuri.mp4" type="video/mp4">
+    </video> -->
+
+
+
+    <!-- <div class="container mt-5 pt-5" style="width: 320px; height: 320px; background-color: #ffA;"></div> -->
+    <div class="container-flex">
+        <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
+            <div class="container-fluid ">
+
+                <!-- <a class="navbar-brand  text-light" href="#">Закажи хачапурь онлайн</a> -->
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span> <!--border border-secondary bg-light border-opacity-50-->
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                    <a class="navbar-brand mt-2 ms-1"><img src="icon.png" width="32px"></a>
+
+                    <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="index.html">Главная</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="partners.html">Партнеры</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link text-light ms-2" href="#">Ингредиенты</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class=" text-light mt-2 ms-2" style="padding: 0; text-decoration: none;" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+                                Меню
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="text-center ms-2 mt-0" role="search">
+                        <button class="btn btn-outline-light" type="submit">Доставка</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <h1 class="text-center my-5 py-3 text-light" id="name" style="font-family: Rubik Wet Paint;">Ингредиенты
+    </h1>
+
+    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvas" aria-labelledby="offcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvas">Offcanvas</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Place offcanvas content here.</p>
+        </div>
+    </div>
+
+    <!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+        aria-controls="offcanvasExample">
+        Link with href
+    </a> -->
+
+
+    <!-- <div class="b-example-divider mb-3"></div> -->
+
+
+    <div class="container">
+        <div class="container row">
+            <div class=" col-xl-3 col-lg-6 col-md-6 col-sm-12 mt-4">
+                <div class="card bg-dark text-light">
+                    <img src="1.jpg" class="card-img-top" alt="Хачапури по Аджарски" height="260" width="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Лодочка</h5>
+                        <hr>
+                        <p class="card-text fs-4 mt-3">Cостав</p>
+                        <ul class="list-group list-group-flush border">
+                            <li class="list-group-item bg-dark text-light">Тесто ручного приготовления</li>
+                            <li class="list-group-item bg-dark text-light">Сыр прямо из под козла</li>
+                            <li class="list-group-item bg-dark text-light">Яйца свежие(только снеслась)</li>
+                            <li class="list-group-item bg-dark text-light">Масло 1000%</li>
+                            <li class="list-group-item bg-dark text-light">Розовая соль</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-xl-3 col-lg-6 col-md-6 col-sm-12 mt-4">
+                <div class="card bg-dark text-light">
+                    <img src="2.jpg" class="card-img-top" alt="Хачапури по Аджарски" height="260" width="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Царская Нарта </h5>
+                        <hr>
+                        <p class="card-text fs-4 mt-3">Cостав</p>
+                        <ul class="list-group list-group-flush border">
+                            <li class="list-group-item bg-dark text-light">Тесто ручного приготовления</li>
+                            <li class="list-group-item bg-dark text-light">Сыр прямо из под козла</li>
+                            <li class="list-group-item bg-dark text-light">Яйца свежие(только снеслась)</li>
+                            <li class="list-group-item bg-dark text-light">Масло 1000%</li>
+                            <li class="list-group-item bg-dark text-light">Розовая соль</li>
+                        </ul>
+                        <!-- <p class="card-text">Это грузинское блюдо не оставит раводушного. Представляет собой закрытый
+                            пирог нарты, поверх которого выложен печеный сыр со специями. Все это дополнительно обжарено
+                            в печи. </p> -->
+                        <!-- <a href="#" class="btn btn-success btn-outline-light">Сделать заказ</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class=" col-xl-3 col-lg-6 col-md-6 col-sm-12 mt-4">
+                <div class="card bg-dark text-light">
+                    <img src="7.jpg" class="card-img-top" alt="Хачапури по Аджарски" height="260" width="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Хачапури Гребешок </h5>
+                        <hr>
+                        <p class="card-text fs-4 mt-3">Cостав</p>
+                        <ul class="list-group list-group-flush border">
+                            <li class="list-group-item bg-dark text-light">Тесто ручного приготовления</li>
+                            <li class="list-group-item bg-dark text-light">Сыр прямо из под козла</li>
+                            <li class="list-group-item bg-dark text-light">Яйца свежие(только снеслась)</li>
+                            <li class="list-group-item bg-dark text-light">Масло 1000%</li>
+                            <li class="list-group-item bg-dark text-light">Розовая соль</li>
+                        </ul>
+                        <!-- <p class="card-text">Этот гребешок напоминает музыкальный инструмент, так говорится в легенде о
+                            'Галиани'. Блюдо представляет собой тонкое слоистое тесто с огромный по соот ношение оьбемом
+                            сыра.</p> -->
+                        <!-- <a href="#" class="btn btn-success btn-outline-light">Сделать заказ</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class=" col-xl-3 col-lg-6 col-md-6 col-sm-12 mt-4">
+                <div class="card bg-dark text-light">
+                    <img src="4.jpg" class="card-img-top" alt="Хачапури по Аджарски" height="260" width="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Хачапури Пабулуни </h5>
+                        <hr>
+                        <p class="card-text fs-4 mt-3">Cостав</p>
+                        <ul class="list-group list-group-flush border">
+                            <li class="list-group-item bg-dark text-light">Тесто ручного приготовления</li>
+                            <li class="list-group-item bg-dark text-light">Сыр прямо из под козла</li>
+                            <li class="list-group-item bg-dark text-light">Яйца свежие(только снеслась)</li>
+                            <li class="list-group-item bg-dark text-light">Масло 1000%</li>
+                            <li class="list-group-item bg-dark text-light">Розовая соль</li>
+                        </ul>
+                        <!-- <p class="card-text">Это блюдо готовили в древние времена жены грузинских пастухов уходящих в
+                            горы пасти скот. Мужчины запасались Пабулуни и сыром, а в качестве воды выступало красное
+                            вино.</p> -->
+                        <!-- <a href="#" class="btn btn-success btn-outline-light">Сделать заказ</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class=" col-xl-3 col-lg-6 col-md-6 col-sm-12 mt-4">
+                <div class="card bg-dark text-light">
+                    <img src="1.jpg" class="card-img-top" alt="Хачапури по Аджарски" height="260" width="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Лодочка </h5>
+                        <hr>
+                        <p class="card-text fs-4 mt-3">Cостав</p>
+                        <ul class="list-group list-group-flush border">
+                            <li class="list-group-item bg-dark text-light">Тесто ручного приготовления</li>
+                            <li class="list-group-item bg-dark text-light">Сыр прямо из под козла</li>
+                            <li class="list-group-item bg-dark text-light">Яйца свежие(только снеслась)</li>
+                            <li class="list-group-item bg-dark text-light">Масло 1000%</li>
+                            <li class="list-group-item bg-dark text-light">Розовая соль</li>
+                        </ul>
+                        <!-- <p class="card-text">Классическое блюдо Аджарской кухни, представляет собой печеное тесто в
+                            форме лодочки,
+                            а внутри сочный сыр сулугуни прямо из печи. Сверху желток яйца и кусочек свежего масла.</p> -->
+                        <!-- <a href="#" class="btn btn-success btn-outline-light">Сделать заказ</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class=" col-xl-3 col-lg-6 col-md-6 col-sm-12 mt-4">
+                <div class="card bg-dark text-light">
+                    <img src="1.jpg" class="card-img-top" alt="Хачапури по Аджарски" height="260" width="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Лодочка </h5>
+                        <hr>
+                        <p class="card-text fs-4 mt-3">Cостав</p>
+                        <ul class="list-group list-group-flush border">
+                            <li class="list-group-item bg-dark text-light">Тесто ручного приготовления</li>
+                            <li class="list-group-item bg-dark text-light">Сыр прямо из под козла</li>
+                            <li class="list-group-item bg-dark text-light">Яйца свежие(только снеслась)</li>
+                            <li class="list-group-item bg-dark text-light">Масло 1000%</li>
+                            <li class="list-group-item bg-dark text-light">Розовая соль</li>
+                        </ul>
+                        <!-- <p class="card-text">Классическое блюдо Аджарской кухни, представляет собой печеное тесто в
+                            форме лодочки,
+                            а внутри сочный сыр сулугуни прямо из печи. Сверху желток яйца и кусочек свежего масла.</p> -->
+                        <!-- <a href="#" class="btn btn-success btn-outline-light">Сделать заказ</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class=" col-xl-3 col-lg-6 col-md-6 col-sm-12 mt-4">
+                <div class="card bg-dark text-light">
+                    <img src="1.jpg" class="card-img-top" alt="Хачапури по Аджарски" height="260" width="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Лодочка </h5>
+                         <hr>
+                        <p class="card-text fs-4 mt-3">Cостав</p>
+                        <ul class="list-group list-group-flush border">
+                            <li class="list-group-item bg-dark text-light">Тесто ручного приготовления</li>
+                            <li class="list-group-item bg-dark text-light">Сыр прямо из под козла</li>
+                            <li class="list-group-item bg-dark text-light">Яйца свежие(только снеслась)</li>
+                            <li class="list-group-item bg-dark text-light">Масло 1000%</li>
+                            <li class="list-group-item bg-dark text-light">Розовая соль</li>
+                        </ul>   
+                        <!-- <p class="card-text">Классическое блюдо Аджарской кухни, представляет собой печеное тесто в
+                            форме лодочки,
+                            а внутри сочный сыр сулугуни прямо из печи. Сверху желток яйца и кусочек свежего масла.</p> -->
+                        <!-- <a href="#" class="btn btn-success btn-outline-light">Сделать заказ</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class=" col-xl-3 col-lg-6 col-md-6 col-sm-12 mt-4">
+                <div class="card bg-dark text-light">
+                    <img src="1.jpg" class="card-img-top" alt="Хачапури по Аджарски" height="260" width="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Лодочка</h5>
+                          <hr>
+                        <p class="card-text fs-4 mt-3">Cостав</p>
+                        <ul class="list-group list-group-flush border">
+                            <li class="list-group-item bg-dark text-light">Тесто ручного приготовления</li>
+                            <li class="list-group-item bg-dark text-light">Сыр прямо из под козла</li>
+                            <li class="list-group-item bg-dark text-light">Яйца свежие(только снеслась)</li>
+                            <li class="list-group-item bg-dark text-light">Масло 1000%</li>
+                            <li class="list-group-item bg-dark text-light">Розовая соль</li>
+                        </ul>  
+                        <!-- <p class="card-text">Классическое блюдо Аджарской кухни, представляет собой печеное тесто в
+                            форме лодочки,
+                            а внутри сочный сыр сулугуни прямо из печи. Сверху желток яйца и кусочек свежего масла.</p> -->
+                        <!-- <a href="#" class="btn btn-success btn-outline-light">Сделать заказ</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="b-example-divider mt-5"></div> -->
+
+    <!-- <div class="contianer my-5">
+        <p class="h1 text-center text-light">Галерея блюд</p>
+    </div> -->
+
+    <!-- <div class="b-example-divider"></div> -->
+
+    <!-- <div class="container">
+        <div class="container row mt-5 border border-1 border-dark rounded bg-dark bg-opacity-50">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm border border-3 my-3 border-dark">
+                    <img class="gallery-item" src="5.jpg" alt="hachapuri" title="Хачапури конечно!" height="200">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm border border-3 my-3 border-dark">
+                    <img class="gallery-item" src="6.jpg" alt="hachapuri" title="Хачапури конечно!" height="200">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm border border-3 my-3 border-dark">
+                    <img class="gallery-item" src="7.jpg" alt="hachapuri" title="Хачапури конечно!" height="200">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm border border-3 my-3 border-dark">
+                    <img class="gallery-item" src="8.jpg" alt="hachapuri" title="Хачапури конечно!" height="200">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm border border-3 my-3 border-dark">
+                    <img class="gallery-item" src="9.jpg" alt="hachapuri" title="Хачапури конечно!" height="200">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm border border-3 my-3 border-dark">
+                    <img class="gallery-item" src="10.jpg" alt="hachapuri" title="Хачапури конечно!" height="200">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm border border-3 my-3 border-dark">
+                    <img class="gallery-item" src="11.jpg" alt="hachapuri" title="Хачапури конечно!" height="200">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm border border-3 my-3 border-dark">
+                    <img class="gallery-item" src="12.jpeg" alt="hachapuri" title="Хачапури конечно!" height="200">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm border border-3 my-3 border-dark">
+                    <img class="gallery-item" src="13.jpg" alt="hachapuri" title="Хачапури конечно!" height="200">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm border border-3 my-3 border-dark">
+                    <img class="gallery-item" src="14.webp" alt="hachapuri" title="Хачапури конечно!" height="200">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm border border-3 my-3 border-dark">
+                    <img class="gallery-item" src="15.jpg" alt="hachapuri" title="Хачапури конечно!" height="200">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-sm border border-3 my-3 border-dark">
+                    <img class="gallery-item" src="16.jpg" alt="hachapuri" title="Хачапури конечно!" height="200">
+                </div>
+            </div>
+
+        </div>
+    </div> -->
+
+    <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog bg-dark rounded-5">
+            <div class="modal-content bg-dark">
+
+
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                <h1 class="modal-title text-light fs-1 mx-auto" id="exampleModalLabel">Твои Хачапури</h1>
+
+
+                <div class="modal-body">
+                    <img class="modal-img" alt="картинка в полный размер" width="100%" height="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
